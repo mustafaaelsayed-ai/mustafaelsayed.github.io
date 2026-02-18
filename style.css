@@ -1,50 +1,97 @@
+/* Fonts and basic setup */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000; /* black background */
-    color: #fff; /* white text */
-    text-align: center;
-    padding: 20px;
-}
+  font-family: 'Roboto', sans-serif;
+  background-color: #000; /* black */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 
-header {
-    background-color: #111; /* dark header */
-    color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #fff; /* white border */
-    margin-bottom: 15px;
-}
-
-h1, h2 {
-    margin: 10px 0;
-}
-
-p {
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 0 auto 20px;
-}
-
-.about, .contact {
-    background-color: #111; /* dark section background */
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    max-width: 700px;
-    box-shadow: 0 4px 8px rgba(255,255,255,0.1); /* light shadow */
+  /* Subtle grid lines background */
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px; /* grid size */
 }
 
 a {
-    color: #00ffff; /* link color */
-    text-decoration: none;
+  color: #00ffff;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+/* Central container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #00ffff; /* neon border */
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+header p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 2px solid #00ffff;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+
+/* Sections */
+section {
+  background-color: #111;
+  margin: 30px 0;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,255,255,0.2);
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+section p {
+  font-size: 16px;
+  color: #ddd;
+}
+
+/* Contact section */
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
 }
