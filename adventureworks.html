@@ -4,7 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ADVENTUREWORKS Project</title>
+
+<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<!-- Lightbox CSS -->
+<link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+
 <style>
 body {
   font-family: 'Roboto', sans-serif;
@@ -37,12 +43,11 @@ section h2 { font-size: 28px; margin-bottom: 15px; }
 section p, section li { font-size: 16px; color: #ddd; }
 
 .images { text-align: center; }
-.images img { width: 300px; margin: 10px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,255,255,0.3); transition: 0.3s; }
+.images img { width: 300px; margin: 10px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,255,255,0.3); cursor: pointer; transition: 0.3s; }
 .images img:hover { transform: scale(1.05); }
 
 .btn { display: inline-block; margin-top: 20px; padding: 10px 25px; border: 2px solid #00ffff; border-radius: 50px; font-weight: bold; transition: 0.3s; }
 .btn:hover { background-color: #00ffff; color: #000; }
-
 </style>
 </head>
 <body>
@@ -71,17 +76,27 @@ section p, section li { font-size: 16px; color: #ddd; }
   </section>
 
   <section>
-    <h2>Dashboard</h2>
+    <h2>Dashboard Screenshots</h2>
     <div class="images">
-      <img src="dashboard1.jpg" alt="Dashboard1">
-      <img src="dashboard2.jpg" alt="Dashboard2">
-      <img src="dashboard3.jpg" alt="Dashboard3">
-      <img src="dashboard4.jpg" alt="Dashboard4">
+      <a href="dashboard1.jpg" data-lightbox="adventureworks" data-title="Dashboard 1">
+        <img src="dashboard1.jpg" alt="Dashboard 1">
+      </a>
+      <a href="dashboard2.jpg" data-lightbox="adventureworks" data-title="Dashboard 2">
+        <img src="dashboard2.jpg" alt="Dashboard 2">
+      </a>
+      <a href="dashboard3.jpg" data-lightbox="adventureworks" data-title="Dashboard 3">
+        <img src="dashboard3.jpg" alt="Dashboard 3">
+      </a>
+      <a href="dashboard4.jpg" data-lightbox="adventureworks" data-title="Dashboard 4">
+        <img src="dashboard4.jpg" alt="Dashboard 4">
+      </a>
     </div>
   </section>
 
   <a class="btn" href="index.html">← Back to Projects</a>
 </div>
 
+<!-- Lightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
